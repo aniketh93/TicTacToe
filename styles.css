@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+#status {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+#restart {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
